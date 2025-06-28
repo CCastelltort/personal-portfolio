@@ -27,15 +27,17 @@ export default function Home() {
       {/*Basic information about me */}
       <div className="flex-grow flex flex-col justify-evenly text-gray-600 pl-40 text-lg">
         {lines.map((line, index) => (
-          <p
+          <div
             key={index}
             className={`${line.padding} transition-transform duration-700 ease-out transform ${
               loaded ? "scale-100 opacity-100" : "scale-75 opacity-0"
             }`}
             style={{ transitionDelay: `${index * 200}ms` }}
           >
-            {line.text}
-          </p>
+            <div className="bg-blue-200 rounded-xl px-6 py-4 text-gray-800 shadow-sm w-fit">
+              {line.text}
+            </div>
+          </div>
         ))}
       </div>
 

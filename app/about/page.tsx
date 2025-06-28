@@ -29,7 +29,7 @@ const page = () => {
             to the university community</span>.
           </p>
         </div>
-        <div className="bg-blue-300 p-6 rounded-2xl shadow-md text-gray-600 lg:col-span-3 text-justify mt-6 transition-transform duration-300 hover:scale-105">
+        <div className="bg-blue-300 p-6 rounded-2xl shadow-md text-gray-600 lg:col-span-3 text-justify mt-6 transition-transform duration-300 hover:scale-102">
           <p>
             At TCU, I’ve been active in organizations such as <span className="text-black">SHPE (Society of Hispanic Professional Engineers), 
             SWE (Society of Women Engineers), and the Robotics and AI Club</span>. I’ve also gained valuable experience 
