@@ -47,20 +47,20 @@ export default function Home() {
             href="https://github.com/CCastelltort"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center w-48 h-24 bg-white shadow-md border rounded-xl hover:bg-gray-200 transition"
+            className="flex items-center justify-center w-48 h-24 bg-black shadow-md rounded-xl hover:bg-gray-800 transition"
           >
-            <FaGithub className="text-3xl mr-2" />
-            <span className="text-lg font-semibold">GitHub</span>
+            <FaGithub className="text-3xl mr-2 text-white" />
+            <span className="text-lg font-semibold text-white">GitHub</span>
           </a>
 
           <a
             href="https://www.linkedin.com/in/carlota-castelltort-pinto/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center w-48 h-24 bg-white shadow-md border rounded-xl hover:bg-gray-200 transition"
+            className="flex items-center justify-center w-48 h-24 bg-blue-800 shadow-md rounded-xl hover:bg-blue-700 transition"
           >
-            <FaLinkedin className="text-3xl text-blue-700 mr-2" />
-            <span className="text-lg font-semibold">LinkedIn</span>
+            <FaLinkedin className="text-3xl text-white mr-2" />
+            <span className="text-lg font-semibold text-white">LinkedIn</span>
           </a>
         </div>
 
