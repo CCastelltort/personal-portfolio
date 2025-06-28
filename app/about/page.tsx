@@ -6,8 +6,8 @@ const page = () => {
       <div className="flex justify-center pt-32">
         <h1 className="text-5xl font-bold font-sans">About Me</h1>
       </div>
-      <div className="mt-16 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        <div className="bg-blue-300  p-6 rounded-2xl shadow-md text-gray-600 text-justify">
+      <div className="mt-8 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div className="bg-blue-300  p-6 rounded-2xl shadow-md text-gray-600 text-justify transition-transform duration-300 hover:scale-105">
           <p >Hi! I’m Carlota Castelltort Pinto, a senior at Texas Christian University (TCU) pursuing a <span className="text-black">B.S. 
             in Computer Science</span> with minors in Mathematics and General Business. I’m passionate about <span className="text-black">software 
             engineering and web development</span>, and as I prepare to <span className="text-black">graduate in Spring 2026</span>, I’m excited to keep 
@@ -15,7 +15,7 @@ const page = () => {
           </p>
         </div>
 
-        <div className="bg-blue-300 p-6 rounded-2xl shadow-md text-gray-600 text-justify">
+        <div className="bg-blue-300 p-6 rounded-2xl shadow-md text-gray-600 text-justify transition-transform duration-300 hover:scale-105">
           <p>Originally from Spain, I began my college journey at Cisco College, where I was a player of the women’s 
             basketball team. That experience instilled in me strong values of <span className="text-black">commitment, teamwork, leadership, communication, 
             and time management</span>. While at Cisco, I earned consistent academic honors, including the <span className="text-black">President’s List, 
@@ -23,13 +23,13 @@ const page = () => {
           </p>
         </div>
 
-        <div className="bg-blue-300 p-6 rounded-2xl shadow-md text-gray-600 text-justify">
+        <div className="bg-blue-300 p-6 rounded-2xl shadow-md text-gray-600 text-justify transition-transform duration-300 hover:scale-105">
           <p>I later transferred to TCU, where I was awarded the <span className="text-black">prestigious Chancellor’s Scholarship</span>, recognizing 
             the top 1% of applicants for <span className="text-black">academic excellence, leadership, and potential to contribute meaningfully 
             to the university community</span>.
           </p>
         </div>
-        <div className="bg-blue-300 p-6 rounded-2xl shadow-md text-gray-600 lg:col-span-3 text-justify mt-6">
+        <div className="bg-blue-300 p-6 rounded-2xl shadow-md text-gray-600 lg:col-span-3 text-justify mt-6 transition-transform duration-300 hover:scale-105">
           <p>
             At TCU, I’ve been active in organizations such as <span className="text-black">SHPE (Society of Hispanic Professional Engineers), 
             SWE (Society of Women Engineers), and the Robotics and AI Club</span>. I’ve also gained valuable experience 
