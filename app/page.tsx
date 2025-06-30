@@ -1,7 +1,6 @@
 'use client'
 
 import { useEffect, useState } from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
   const [loaded, setLoaded] = useState(false);
@@ -11,10 +10,10 @@ export default function Home() {
   }, []);
 
   const lines = [
-    { text: "My name is Carlota Castelltort Pinto.", padding: "pl-0" },
-    { text: "I am a senior at Texas Christian University.", padding: "pl-10" },
-    { text: "I am pursuing a B.S. in Computer Science.", padding: "pl-20" },
-    { text: "With minors in Mathematics and General Business.", padding: "pl-40" },
+    { text: "My name is Carlota Castelltort Pinto", padding: "pl-0" },
+    { text: "I am a senior at Texas Christian University", padding: "pl-10" },
+    { text: "I am pursuing a B.S. in Computer Science", padding: "pl-20" },
+    { text: "With minors in Mathematics and General Business", padding: "pl-40" },
   ];
 
   return (
@@ -40,30 +39,6 @@ export default function Home() {
           </div>
         ))}
       </div>
-
-      {/* Social Buttons */}
-        <div className="flex gap-10 mt-10 mb-10 justify-center">
-          <a
-            href="https://github.com/CCastelltort"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center w-48 h-24 bg-black shadow-md rounded-xl hover:bg-gray-800 transition"
-          >
-            <FaGithub className="text-3xl mr-2 text-white" />
-            <span className="text-lg font-semibold text-white">GitHub</span>
-          </a>
-
-          <a
-            href="https://www.linkedin.com/in/carlota-castelltort-pinto/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center w-48 h-24 bg-blue-800 shadow-md rounded-xl hover:bg-blue-700 transition"
-          >
-            <FaLinkedin className="text-3xl text-white mr-2" />
-            <span className="text-lg font-semibold text-white">LinkedIn</span>
-          </a>
-        </div>
-
     </div>
   );
 }
