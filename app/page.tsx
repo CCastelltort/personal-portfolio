@@ -18,14 +18,14 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-100 px-10 flex flex-col">
+    <div className="min-h-screen bg-gray-100 px-10 flex flex-col bg-gradient-to-r from-blue-700 to-purple-700">
 
-      <div className="flex justify-center pt-32">
-        <h1 className="text-5xl font-bold font-sans">Hi! Welcome to my Portfolio!</h1>
+      <div className="flex justify-center pt-32 pb-4">
+        <h1 className="text-5xl font-bold font-sans text-white">Hi! Welcome to my Portfolio!</h1>
       </div>
 
       {/*Basic information about me */}
-      <div className="flex-grow flex flex-col justify-evenly text-gray-600 pl-40 text-lg">
+      <div className="flex-grow flex flex-col justify-evenly text-gray-600 text-lg">
         {lines.map((line, index) => (
           <div
             key={index}
@@ -34,7 +34,7 @@ export default function Home() {
             }`}
             style={{ transitionDelay: `${index * 200}ms` }}
           >
-            <div className="bg-blue-200 rounded-xl px-6 py-4 text-gray-800 shadow-sm w-fit">
+            <div className="bg-white/30 border border-white rounded-xl px-6 py-4 text-white shadow-sm w-fit">
               {line.text}
             </div>
           </div>
