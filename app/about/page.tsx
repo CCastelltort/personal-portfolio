@@ -1,13 +1,12 @@
 import React from 'react'
 import Highlight from '../components/Highlight';
 import Container from '../components/Container';
+import PageTitle from '../components/PageTitle';
 
 const page = () => {
   return (
     <Container>
-      <div className="flex justify-center pt-26">
-        <h1 className="text-5xl font-bold font-sans text-white">About Me</h1>
-      </div>
+      <PageTitle>About Me</PageTitle>
       <div className="mt-8 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pb-12">
         <div className="bg-white/30 p-6 rounded-2xl shadow-md text-white text-justify transition-transform duration-300 hover:scale-105 border border-white">
           <h2 className='text-2xl font-bold mb-4'>Education</h2> 

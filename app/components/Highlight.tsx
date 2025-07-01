@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 
-const Highlight = ({ children }: { children: React.ReactNode }) => {
+interface HighlightProps {
+  children: ReactNode;
+}
+
+const Highlight = ({ children }: HighlightProps) => {
   return (
     <span className="font-bold ">
         {children}
