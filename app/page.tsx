@@ -1,6 +1,8 @@
 'use client'
 
 import { useEffect, useState } from "react";
+import Container from './components/Container';
+import PageTitle from './components/PageTitle';
 
 export default function Home() {
   const [loaded, setLoaded] = useState(false);
@@ -17,11 +19,8 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-100 px-10 flex flex-col bg-gradient-to-r from-blue-700 to-purple-700">
-
-      <div className="flex justify-center pt-32 pb-4">
-        <h1 className="text-5xl font-bold font-sans text-white">Hi! Welcome to my Portfolio!</h1>
-      </div>
+    <Container>
+      <PageTitle>Hi! Welcome to my Portfolio!</PageTitle>
 
       {/*Basic information about me */}
       <div className="flex-grow flex flex-col justify-evenly text-gray-600 text-lg">
@@ -39,6 +38,6 @@ export default function Home() {
           </div>
         ))}
       </div>
-    </div>
+    </Container>
   );
 }

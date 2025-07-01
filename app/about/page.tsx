@@ -1,8 +1,9 @@
 import React from 'react'
-import Highlight from '../components/Highlight';
 import Container from '../components/Container';
 import PageTitle from '../components/PageTitle';
 import InfoCard from '../components/InfoCard';
+import Highlight from '../components/Highlight';
+
 
 const page = () => {
   return (
