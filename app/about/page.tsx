@@ -2,38 +2,31 @@ import React from 'react'
 import Highlight from '../components/Highlight';
 import Container from '../components/Container';
 import PageTitle from '../components/PageTitle';
+import InfoCard from '../components/InfoCard';
 
 const page = () => {
   return (
     <Container>
       <PageTitle>About Me</PageTitle>
       <div className="mt-8 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pb-12">
-        <div className="bg-white/30 p-6 rounded-2xl shadow-md text-white text-justify transition-transform duration-300 hover:scale-105 border border-white">
-          <h2 className='text-2xl font-bold mb-4'>Education</h2> 
-          <ul className='list-disc pl-6 space-y-2'>
-            <li>Computer Science student at Texas Christian Universtiy.</li>
-            <li>Minoring in Mathematics and General Business.</li>
-            <li>Graduating in Spring 2026.</li>
-          </ul>
-        </div>
+        <InfoCard title="Education">
+          <li>B.S. in Computer Science at Texas Christian University.</li>
+          <li>Minoring in Mathematics and General Business.</li>
+          <li>Graduating in Spring 2026.</li>
+        </InfoCard>
 
-        <div className="bg-white/30 p-6 rounded-2xl shadow-md text-white text-justify transition-transform duration-300 hover:scale-105 border border-white">
-          <h2 className='text-2xl font-bold mb-4'>Awards</h2> 
-          <ul className='list-disc pl-6 space-y-2'>
+        <InfoCard title="Awards">
             <li>TCU Chancellor's Scholar (University’s Most Prestigious Academic Scholarship).</li>
             <li>TCU Scholar (Earned for achieving a 4.0 GPA).</li>
             <li>TCU Dean's Honor List.</li>
-          </ul>
-        </div>
+        </InfoCard>
 
-        <div className="bg-white/30 p-6 rounded-2xl shadow-md text-white text-justify transition-transform duration-300 hover:scale-105 border border-white">
-          <h2 className='text-2xl font-bold mb-4'>Experience</h2> 
-          <ul className='list-disc pl-6 space-y-2'>
+        <InfoCard title="Experience">
             <li>Full-Stack Developer Intern at Creagia.</li>
             <li>IT Student Assistant at Texas Christian University.</li>
             <li>Vice President of the Computer Science Society at Texas Christian University.</li>
-          </ul>
-        </div>
+        </InfoCard>
+
         <div className="bg-white/30 p-6 rounded-2xl shadow-md text-white lg:col-span-3 text-justify mt-6 transition-transform duration-300 hover:scale-102 border border-white">
           <p>
             Hi! I’m Carlota Castelltort Pinto, a senior at Texas Christian University (TCU) pursuing a <Highlight>B.S.
