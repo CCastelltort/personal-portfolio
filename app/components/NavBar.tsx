@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const NavBar = () => {
   return (
-    <nav className='fixed top-0 w-full flex py-5 px-20 text-black justify-between'>
+    <nav className='fixed top-0 w-full flex py-5 px-20 justify-between bg-gradient-to-r from-blue-700 to-purple-700 '>
         
         {/*Navigation Links*/}
         <ul className='flex gap-10 text-lg font-bold text-white'>

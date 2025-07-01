@@ -1,10 +1,11 @@
 import React from 'react'
 import Highlight from '../components/Highlight';
+import Container from '../components/Container';
 
 const page = () => {
   return (
-    <div className="min-h-screen px-10 flex flex-col bg-gradient-to-r from-blue-700 to-purple-700">
-      <div className="flex justify-center pt-32">
+    <Container>
+      <div className="flex justify-center pt-26">
         <h1 className="text-5xl font-bold font-sans text-white">About Me</h1>
       </div>
       <div className="mt-8 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pb-12">
@@ -63,7 +64,7 @@ const page = () => {
           </p>
         </div>
       </div>
-    </div>
+    </Container>
   )
 }
 
