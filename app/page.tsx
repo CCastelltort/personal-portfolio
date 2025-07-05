@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Container from './components/Container';
 import InfoCard from './components/InfoCard';
-
+import projects from "./data/projects";
 
 export default function Home() {
   const [loaded, setLoaded] = useState(false);
@@ -11,6 +11,7 @@ export default function Home() {
   useEffect(() => {
     setLoaded(true);
   }, []);
+
 
   const lines = [
     { text: "This is my Personal Portfolio", padding: "pl" },
@@ -65,18 +66,41 @@ export default function Home() {
         </div>
 
         {/* COLUMN 3: Experience */}
-            <div className="flex flex-col text-white">
-              {/* Experience */}
-              <InfoCard title="Experience">
-                <ul className="list-disc pl-6 space-y-6">
-                  <li>Full-Stack Developer Intern at Creagia.</li>
-                  <li>IT Student Assistant at Texas Christian University.</li>
-                  <li>Vice President of TCU's Computer Science Society.</li>
-                </ul>
-              </InfoCard>
+        <div className="flex flex-col text-white justify-between h-full">
+          {/* Experience */}
+          <InfoCard title="Experience">
+            <ul className="list-disc pl-6 space-y-6">
+              <li>Full-Stack Developer Intern at Creagia.</li>
+              <li>IT Student Assistant at Texas Christian University.</li>
+              <li>Vice President of TCU's Computer Science Society.</li>
+            </ul>
+          </InfoCard>
+  
+          <div className="overflow-hidden fade-mask">
+            <div
+              className="flex flex-nowrap animate-scroll"
+              style={{ animationDuration: '30s' }}
+            >
+              {/* duplicated projects for infinite scroll */}
+              {[...projects, ...projects].map((project, i) => (
+                <div
+                  key={i}
+                  className="inline-block w-56 flex-shrink-0 m-4 bg-white/30 rounded-lg p-4 border border-white"
+                >
+                  <h4 className="font-semibold text-center mb-2 break-words">{project.title}</h4>
+
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-32 object-cover rounded mb-2"
+                  />
+                </div>
+              ))}
             </div>
           </div>
-
+        </div>
+      </div>
+          
     </Container>
   );
 }
