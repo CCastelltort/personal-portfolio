@@ -88,7 +88,7 @@ const page = () => {
           </ul>
         </InfoCard>
 
-        <div className="lg:col-span-3 text-justify text-white bg-white/30 p-6 rounded-2xl mt-6 border border-white">
+        <div className="lg:col-span-3 text-justify text-white bg-white/30 p-6 rounded-2xl border border-white">
           <p>
             Hi! I’m Carlota Castelltort Pinto, a senior at Texas Christian University (TCU) pursuing a <Highlight>B.S.
             in Computer Science</Highlight> with minors in Mathematics and General Business. I’m passionate about <Highlight>software 

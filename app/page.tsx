@@ -50,7 +50,7 @@ export default function Home() {
         </div>
 
         {/*Picture + Link to projects */}
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col justify-center items-center h-full">
           <img
             src="/profile.jpg"
             alt="Carlota"
@@ -58,7 +58,7 @@ export default function Home() {
           />
           <a
             href="/projects"
-            className="mt-10 mb-4 text-white border border-white px-4 py-2 rounded-md hover:bg-white hover:text-black transition"
+            className="mt-12 mb-4 text-white border border-white px-4 py-2 rounded-md hover:bg-white hover:text-black transition"
           >
             View My Projects →
           </a>
@@ -68,9 +68,11 @@ export default function Home() {
             <div className="flex flex-col text-white">
               {/* Experience */}
               <InfoCard title="Experience">
-                <li>Full-Stack Developer Intern at Creagia.</li>
-                <li>IT Student Assistant at Texas Christian University.</li>
-                <li>Vice President of TCU's Computer Science Society.</li>
+                <ul className="list-disc pl-6 space-y-6">
+                  <li>Full-Stack Developer Intern at Creagia.</li>
+                  <li>IT Student Assistant at Texas Christian University.</li>
+                  <li>Vice President of TCU's Computer Science Society.</li>
+                </ul>
               </InfoCard>
             </div>
           </div>
