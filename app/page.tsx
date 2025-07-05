@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 import Container from './components/Container';
+import InfoCard from './components/InfoCard';
+
 
 export default function Home() {
   const [loaded, setLoaded] = useState(false);
@@ -62,34 +64,16 @@ export default function Home() {
           </a>
         </div>
 
-        {/* COLUMN 3: Skills + Coursework */}
+        {/* COLUMN 3: Experience */}
             <div className="flex flex-col text-white">
-              {/* Skills */}
-              <div>
-                <h3 className="text-2xl font-bold mb-4">Skills</h3>
-                <ul className="space-y-2 list-disc list-inside text-sm">
-                  <li>JavaScript / TypeScript</li>
-                  <li>React & Vue.js</li>
-                  <li>Python, C++, Java</li>
-                  <li>SQL / MySQL</li>
-                  <li>TailwindCSS</li>
-                </ul>
-              </div>
-
-              {/* Coursework */}
-              <div className="mt-8">
-                <h3 className="text-2xl font-bold mb-4">Relevant Coursework</h3>
-                <ul className="space-y-2 list-disc list-inside text-sm">
-                  <li>Data Structures & Algorithms</li>
-                  <li>Operating Systems</li>
-                  <li>Software Engineering</li>
-                  <li>Database Systems</li>
-                  <li>Web Technologies</li>
-                </ul>
-              </div>
+              {/* Experience */}
+              <InfoCard title="Experience">
+                <li>Full-Stack Developer Intern at Creagia.</li>
+                <li>IT Student Assistant at Texas Christian University.</li>
+                <li>Vice President of TCU's Computer Science Society.</li>
+              </InfoCard>
             </div>
-
-      </div>
+          </div>
 
     </Container>
   );
