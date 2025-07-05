@@ -1,18 +1,16 @@
-import Link from 'next/link'
 import React from 'react'
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import Link from 'next/link'
+import { FaGithub, FaLinkedin } from "react-icons/fa"
 
-
-const NavBar = () => {
+const DesktopNav = () => {
   return (
-    <nav className='fixed top-0 w-full flex py-5 px-20 justify-between bg-gradient-to-r from-blue-700 to-purple-700 '>
-        
-        {/*Navigation Links*/}
+    <div className="flex justify-between items-center w-full">
+        {/* LEFT: Navigation Links */}
         <ul className='flex gap-10 text-lg font-bold text-white'>
             <Link href="/" className='hover:text-black transition-colors'>
                 Home
             </Link>
-            <Link href="/about" className='hover:text-black transsition-colors'>
+            <Link href="/about" className='hover:text-black transition-colors'>
                 About
             </Link>
             <Link href="/projects" className='hover:text-black transition-colors'>
@@ -23,18 +21,17 @@ const NavBar = () => {
             </Link>
         </ul>
 
-        {/* Social Buttons*/}
+        {/* RIGHT: Social Buttons */}
         <div className="flex gap-4">
           <a
             href="https://github.com/CCastelltort"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center px-4 py-1justify-center bg-black shadow-md rounded-xl hover:bg-gray-700 transition"
+            className="flex items-center px-4 py-1 justify-center bg-black shadow-md rounded-xl hover:bg-gray-700 transition"
           >
             <FaGithub className="text-2xl mr-2 text-white" />
             <span className="text-lg font-semibold text-white">GitHub</span>
           </a>
-
           <a
             href="https://www.linkedin.com/in/carlota-castelltort-pinto/"
             target="_blank"
@@ -45,8 +42,8 @@ const NavBar = () => {
             <span className="text-lg font-semibold text-white">LinkedIn</span>
           </a>
         </div>
-    </nav>
+  </div>
   )
 }
 
-export default NavBar
+export default DesktopNav
