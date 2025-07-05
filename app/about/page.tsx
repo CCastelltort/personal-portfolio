@@ -28,7 +28,7 @@ const page = () => {
             <li>Vice President of the Computer Science Society at Texas Christian University.</li>
         </InfoCard>
 
-        <div className="bg-white/30 p-6 rounded-2xl shadow-md text-white lg:col-span-3 text-justify mt-6 transition-transform duration-300 hover:scale-102 border border-white">
+        <div className="lg:col-span-3 text-justify text-white bg-white/30 p-6 rounded-2xl mt-6 border border-white">
           <p>
             Hi! I’m Carlota Castelltort Pinto, a senior at Texas Christian University (TCU) pursuing a <Highlight>B.S.
             in Computer Science</Highlight> with minors in Mathematics and General Business. I’m passionate about <Highlight>software 
@@ -48,11 +48,11 @@ const page = () => {
           </p>
           <br></br>
           <p>
-            At TCU, I’ve been active in organizations such as <Highlight>SHPE</Highlight> (Society of Hispanic Professional Engineers), 
-            <Highlight>SWE</Highlight> (Society of Women Engineers), <Highlight>Women in Computer Science</Highlight>, and the <Highlight>Robotics and AI Club</Highlight>. Furthermore, I was
-            recently voted <Highlight>Vice President of the Computer Science Society</Highlight>. I’ve also gained valuable experience working as 
-            an <Highlight>IT Assistant</Highlight> and <Highlight>Horned Frog Hospitality Ambassador</Highlight>, roles that strengthened both my 
-            technical and interpersonal skills. In Spring 2025 I was honored as a <Highlight>TCU Scholar</Highlight> and named to the 
+            At TCU, I’ve been active in organizations such as <Highlight>SHPE</Highlight> (Society of Hispanic Professional Engineers), <Highlight>SWE
+            </Highlight> (Society of Women Engineers), <Highlight>Women in Computer Science</Highlight>, and the <Highlight>Robotics and AI Club</Highlight>. 
+            Furthermore, I was recently voted <Highlight>Vice President of the Computer Science Society</Highlight>. I’ve also gained valuable 
+            experience working as an <Highlight>IT Assistant</Highlight> and <Highlight>Horned Frog Hospitality Ambassador</Highlight>, roles that 
+            strengthened both my technical and interpersonal skills. In Spring 2025 I was honored as a <Highlight>TCU Scholar</Highlight> and named to the 
             <Highlight>Dean’s Honor List</Highlight> for achieving a 4.0 GPA.
           </p>
         </div>
