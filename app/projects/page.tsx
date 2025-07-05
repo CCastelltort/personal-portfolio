@@ -15,16 +15,14 @@ const projects = [
     github: "https://github.com/CCastelltort/ROBO-CON-2025",
   },
   {
-    title: "Project 2",
+    title: "Recipe Management System",
     description: [
-      "Built using Vue.js with Bluetooth integration.",
-      "Controlled an Arduino device from a web interface.",
-      "Enabled real-time data syncing via Bluetooth LE."
+      "Designed and populated a relational database using MySQL Workbench by creating an ER diagram, forward-engineering it into a normalized schema, and populating 9 tables with 500+ data entries",
+      "Built a Python-based Command-Line Interface (CLI) integrating 8 optimized SQL queries for efficient data retrieval and modification, with cascading updates and deletes to maintain relational integrity",
     ],
     image: "/images/project1.png",
-    tag: ["Python", "A*", "Heuristics"],
-    github: "",
-    demo: "https://github.com"
+    tag: ["SQL", "MySQL", "Python"],
+    github: "https://github.com/CCastelltort/recipe-management-system",
   },
   {
     title: "Project 3",
@@ -36,6 +34,7 @@ const projects = [
     image: "/images/project1.png",
     tag: ["Python", "A*", "Heuristics"],
     github: "",
+    demo: "https://github.com"
   }
 ]
 
@@ -61,12 +60,14 @@ const page = () => {
                   ))}
                 </ul>
 
-                <div className="flex justify-center">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="rounded-xl shadow-md max-h-60 object-contain"
-                  />
+                <div className="flex justify-center h-full">
+                  <div className="h-full w-full overflow-hidden rounded-xl shadow-md">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                 </div>
               </div>
 
