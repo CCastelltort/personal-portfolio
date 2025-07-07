@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Container from './components/Container';
 import InfoCard from './components/InfoCard';
 import projects from "./data/projects";
+import basicInfo from "./data/basicInfo";
 
 export default function Home() {
   const [loaded, setLoaded] = useState(false);
@@ -11,14 +12,6 @@ export default function Home() {
   useEffect(() => {
     setLoaded(true);
   }, []);
-
-
-  const lines = [
-    { text: "Welcome to my Personal Portfolio"},
-    { text: "I am a senior at Texas Christian University"}, 
-    { text: "I am pursuing a B.S. in Computer Science"},
-    { text: "Minoring in Mathematics and General Business"},
-  ];
 
   return (
     <Container>
@@ -33,9 +26,9 @@ export default function Home() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 py-12 min-h-[75vh]">
 
-        {/*Basic information about me */}
+        {/*COLUMN 1: Basic information about me */}
         <div className="flex flex-col justify-between items-center md:items-start h-full w-full space-y-4">
-          {lines.map((line, index) => (
+          {basicInfo.map((line, index) => (
             <div
               key={index}
               className={`w-full max-w-sm sm:max-w-md md:max-w-full transition-transform duration-700 ease-out transform ${
@@ -50,7 +43,7 @@ export default function Home() {
           ))}
         </div>
 
-        {/*Picture + Link to projects */}
+        {/* COLUMN 2: Picture + Link to projects */}
         <div className="flex flex-col justify-center items-center h-full">
           <img
             src="/profile.jpg"
@@ -65,7 +58,7 @@ export default function Home() {
           </a>
         </div>
 
-        {/* COLUMN 3: Experience */}
+        {/* COLUMN 3: Experience + Projects slide show */}
         <div className="flex flex-col text-white justify-between h-full">
           {/* Experience */}
           <InfoCard title="Experience">
