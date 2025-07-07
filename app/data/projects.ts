@@ -25,7 +25,7 @@ const projects: Project[] = [
       "Designed and populated a relational database using MySQL Workbench by creating an ER diagram, forward-engineering it into a normalized schema, and populating 9 tables with 500+ data entries",
       "Built a Python-based Command-Line Interface (CLI) integrating 8 optimized SQL queries for efficient data retrieval and modification, with cascading updates and deletes to maintain relational integrity",
     ],
-    image: "/images/project1.png",
+    image: "/recipeManagement.png",
     tag: ["SQL", "MySQL", "Python"],
     github: "https://github.com/CCastelltort/recipe-management-system",
   },

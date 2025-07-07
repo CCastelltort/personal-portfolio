@@ -14,10 +14,10 @@ export default function Home() {
 
 
   const lines = [
-    { text: "This is my Personal Portfolio", padding: "pl" },
-    { text: "I am a senior at Texas Christian University", padding: "pl-5" },
-    { text: "I am pursuing a B.S. in Computer Science", padding: "pl-10" },
-    { text: "Minoring in Mathematics and General Business", padding: "pl-15" },
+    { text: "Welcome to my Personal Portfolio"},
+    { text: "I am a senior at Texas Christian University"}, 
+    { text: "I am pursuing a B.S. in Computer Science"},
+    { text: "Minoring in Mathematics and General Business"},
   ];
 
   return (

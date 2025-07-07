@@ -9,7 +9,7 @@ const page = () => {
       <PageTitle>Projects</PageTitle>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-10 py-20">
           {projects.map((project, index) => (
-            <div key={index} className="bg-white/30 p-6 rounded-2xl text-white border border-white transition-transform hover:scale-105">
+            <div key={index} className="flex flex-col bg-white/30 p-6 rounded-2xl text-white border border-white">
               <h2 className="text-2xl font-bold mb-2 text-center">{project.title}</h2>
               
               <div className="flex flex-wrap gap-2 mb-4">
@@ -18,8 +18,8 @@ const page = () => {
                 ))}
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center mb-4">
-                <ul className="list-disc text-white mb-2 pl-6 space-y-2">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4 flex-grow">
+                <ul className="list-disc text-white mb-2 pl-6 h-full flex flex-col justify-between">
                   {project.description.map((point, idx) => (
                     <li key={idx}>{point}</li>
                   ))}
