@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import NavBar from "./components/navbar/NavBar";
+import NavBar from "../components/navbar/NavBar";
 
 export const metadata: Metadata = {
   title: "Carlota Castelltort Pinto's Portfolio",
-  description: "Welcome to my personal portfolio website",
+  description: "Carlota Castelltort Pinto personal portfolio website ",
 };
 
 export default function RootLayout({

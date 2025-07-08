@@ -1,15 +1,6 @@
-import React from 'react'
-import Container from '../components/Container';
-import PageTitle from '../components/PageTitle';
+import Contact from "@/components/Contact";
 
+export default function Page() {
+  return <Contact />;
 
-
-const page = () => {
-  return (
-    <Container>
-      <PageTitle>Contact Me</PageTitle>
-    </Container>
-  )
 }
-
-export default page
