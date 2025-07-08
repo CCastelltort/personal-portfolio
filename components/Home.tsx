@@ -5,6 +5,7 @@ import Container from "./ui/Container";
 import InfoCard from "./ui/InfoCard";
 import projects from "@/data/projects";
 import basicInfo from "@/data/basicInfo";
+import { experience } from "@/data/experience";
 
 export default function Home() {
   const [loaded, setLoaded] = useState(false);
@@ -63,9 +64,9 @@ export default function Home() {
           {/* Experience */}
           <InfoCard title="Experience">
             <ul className="list-disc pl-6 space-y-6">
-              <li>Full-Stack Developer Intern at Creagia.</li>
-              <li>IT Student Assistant at Texas Christian University.</li>
-              <li>Vice President of TCU's Computer Science Society.</li>
+              {experience.map((exp, idx) => (
+                    <li key={`exp-${idx}`}>{exp}</li>
+                  ))}
             </ul>
           </InfoCard>
   
