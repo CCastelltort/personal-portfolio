@@ -62,7 +62,7 @@ export default function Home() {
         {/* COLUMN 3: Experience + Projects slide show */}
         <div className="flex flex-col text-white justify-between h-full">
           {/* Experience */}
-          <InfoCard title="Experience">
+          <InfoCard title="EXPERIENCE">
             <ul className="list-disc pl-6 space-y-6">
               {experience.map((exp, idx) => (
                     <li key={`exp-${idx}`}>{exp}</li>
