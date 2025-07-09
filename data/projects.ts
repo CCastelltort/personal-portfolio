@@ -5,6 +5,7 @@ export type Project = {
     tag: string[];
     github: string;
     demo?: string;
+    inProgress?: boolean;
 }
 
 const projects: Project[] = [
@@ -39,7 +40,8 @@ const projects: Project[] = [
     image: "/images/project1.png",
     tag: ["Tag1", "Tag2", "Tag3"],
     github: "",
-    demo: "https://github.com"
+    demo: "https://github.com",
+    inProgress: true,
   }
 ];
 

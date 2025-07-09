@@ -19,27 +19,33 @@ const Projects = () => {
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4 flex-grow">
-                <ul className="list-disc text-white mb-2 pl-6 h-full flex flex-col justify-center space-y-2">
+                <ul className="list-disc text-white mb-2 pl-6 h-full flex flex-col space-y-4">
                   {project.description.map((point, idx) => (
                     <li key={idx}>{point}</li>
                   ))}
                 </ul>
-
-                <div className="flex justify-center h-full">
-                  <div className="h-full w-full overflow-hidden rounded-xl shadow-md">
+                  <div className="w-full overflow-hidden rounded-xl">
                     <img
                       src={project.image}
                       alt={project.title}
                       className="w-full h-full object-cover"
                     />
                   </div>
-                </div>
               </div>
 
-              <div className="flex gap-4 justify-center">
-                <a href={project.github} target="_blank" rel="noopener noreferrer" className="bg-black px-2 py rounded-lg hover:bg-gray-800">GitHub</a>
-                {project.demo && (
-                  <a href={project.demo} target="_blank" rel="noopener noreferrer" className="bg-green-700 px-2 py rounded-lg hover:bg-green-800">Demo</a>
+              <div className='grid grid-cols-1 md:grid-cols-2'>
+                <div className="flex gap-4 justify-center">
+                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="bg-black px-2 py rounded-lg hover:bg-gray-800">Vist Repository</a>
+                  {project.demo && (
+                    <a href={project.demo} target="_blank" rel="noopener noreferrer" className="bg-green-700 px-2 py rounded-lg hover:bg-green-800">Demo</a>
+                  )}
+                </div>
+                {project.inProgress && (
+                  <div className="flex justify-center">
+                  <span className="bg-yellow-400 text-black italic px-2 py rounded-lg">
+                    In Progress
+                  </span>
+                </div>
                 )}
               </div>
             </div>
