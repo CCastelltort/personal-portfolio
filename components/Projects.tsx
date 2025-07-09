@@ -12,10 +12,17 @@ const Projects = () => {
             <div key={index} className="flex flex-col bg-white/30 p-6 rounded-2xl text-white border border-white">
               <h2 className="text-2xl font-bold mb-2 text-center">{project.title}</h2>
               
-              <div className="flex flex-wrap gap-2 mb-4">
-                {project.tag.map((tag, idx) => (
-                  <span key={idx} className="bg-blue-300 text-black px-3 py-1 rounded-full text-sm">{tag}</span>
-                ))}
+              <div className='flex justify-between'> 
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project.tag.map((tag, idx) => (
+                    <span key={idx} className="bg-blue-300 text-black px-3 py-1 rounded-full text-sm">{tag}</span>
+                  ))}
+                </div>
+                {project.inProgress && (
+                  <span className="bg-yellow-400 text-black italic px-2 rounded-lg self-start h-fit">
+                    In Progress
+                  </span>
+                )}
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4 flex-grow">
@@ -40,13 +47,6 @@ const Projects = () => {
                     <a href={project.demo} target="_blank" rel="noopener noreferrer" className="bg-green-700 px-2 py rounded-lg hover:bg-green-800">Demo</a>
                   )}
                 </div>
-                {project.inProgress && (
-                  <div className="flex justify-center">
-                  <span className="bg-yellow-400 text-black italic px-2 py rounded-lg">
-                    In Progress
-                  </span>
-                </div>
-                )}
               </div>
             </div>
           ))}
