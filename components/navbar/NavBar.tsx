@@ -12,7 +12,7 @@ const NavBar = () => {
         <DesktopNav />
       </div>
       {/* Phone Layout */}
-      <div className="md:hidden">
+      <div className="w-full md:hidden">
         <MobileNav />
       </div>
 
