@@ -14,7 +14,7 @@ const Contact = () => {
   return (
     <Container>
       <PageTitle>Contact Me</PageTitle>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-10 py-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-10 pt-20">
         <div className="flex justify-center items-center">
           <div className="w-full max-w-md">
             <InfoCard title="CONTACT INFORMATION">
