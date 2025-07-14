@@ -25,21 +25,29 @@ export default function Home() {
         </h1>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 py-12 min-h-[75vh]">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 pt-12 flex-1">
 
         {/*COLUMN 1: Basic information about me */}
-        <div className="flex flex-col justify-between items-center md:items-start h-full w-full space-y-4">
+        <div className="relative flex flex-col justify-center items-center h-full">
           {basicInfo.map((line, index) => (
-            <div
-              key={index}
-              className={`w-full max-w-sm sm:max-w-md md:max-w-full transition-transform duration-700 ease-out transform ${
-                loaded ? "scale-100 opacity-100" : "scale-75 opacity-0"
-              }`}
-              style={{ transitionDelay: `${index * 200}ms` }}
-            >
-              <div className="bg-white/30 border border-white rounded-xl px-6 py-4 text-white text-center">
-                {line.text}
+            <div key={index} className="flex flex-col items-center relative w-full">
+              <div
+                className={`w-full max-w-sm sm:max-w-md md:max-w-full transition-transform duration-700 ease-out transform ${
+                  loaded ? "scale-100 opacity-100" : "scale-75 opacity-0"}`}
+                style={{ transitionDelay: `${index * 200}ms` }}
+              >
+                <div className="bg-white/30 border border-white rounded-xl px-6 py-4 text-white text-center">
+                  {line.text}
+                </div>
               </div>
+              {index < basicInfo.length - 1 && (
+                <div
+                  className={`w-px bg-white my-2 transition-transform duration-700 ease-out transform ${
+                    loaded ? "scale-100 opacity-100" : "scale-75 opacity-0"
+                  }`}
+                  style={{ height: '2.5rem', transitionDelay: `${index * 200}ms` }}
+                />
+              )}
             </div>
           ))}
         </div>
@@ -60,7 +68,7 @@ export default function Home() {
         </div>
 
         {/* COLUMN 3: Experience + Projects slide show */}
-        <div className="flex flex-col text-white justify-between h-full">
+        <div className="flex flex-col text-white justify-center gap-4 h-full">
           {/* Experience */}
           <InfoCard title="EXPERIENCE">
             <ul className="list-disc pl-6 space-y-6">
@@ -79,22 +87,21 @@ export default function Home() {
               {[...projects, ...projects].map((project, i) => (
                 <div
                   key={i}
-                  className="inline-block w-56 flex-shrink-0 m-4 bg-white/30 rounded-lg p-4 border border-white"
+                  className="inline-block w-56 flex-shrink-0 mt-4 mx-4 bg-white/30 rounded-lg p-4 border border-white"
                 >
                   <h4 className="font-semibold text-center mb-2 break-words">{project.title}</h4>
 
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-32 object-cover rounded mb-2"
+                    className="w-full h-32 object-cover rounded pb-2"
                   />
                 </div>
               ))}
             </div>
           </div>
         </div>
-      </div>
-          
+      </div>          
     </Container>
   );
 }
