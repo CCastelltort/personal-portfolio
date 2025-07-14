@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <Container>
       <PageTitle>Projects</PageTitle>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-10 mt-12">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 px-10 mt-12">
           {projects.map((project, index) => (
             <div key={index} className="flex flex-col bg-white/30 p-6 rounded-2xl text-white border border-white">
               <h2 className="text-2xl font-bold mb-2 text-center">{project.title}</h2>
