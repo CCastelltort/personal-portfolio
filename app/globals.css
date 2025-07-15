@@ -13,8 +13,7 @@
   animation-name: scroll;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-duration: 30s;
-  animation-fill-mode: forwards;
+  animation-duration: 20s;
 }
 
 .fade-mask {

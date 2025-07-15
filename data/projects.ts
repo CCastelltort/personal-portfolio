@@ -31,6 +31,18 @@ const projects: Project[] = [
     github: "https://github.com/CCastelltort/recipe-management-system",
   },
   {
+    title: "Frog Crew",
+    description: [
+      "Develop the front end using Vue 3 for FrogCrew, a web-based scheduling and crew management platform for TCU Athletics Broadcasting, designed to streamline operations and improve coordination",
+      "Implement features that enable administrators to assign shifts, publish schedules, track crew availability, and manage communications, while allowing crew members to view assignments, submit availability, and request shift swaps through an intuitive interface",
+      "Collaborate with a backend developer to integrate a Spring Boot API, enabling secure role-based access and seamless data flow"
+    ],
+    image: "/frogCrew.jpg",
+    tag: ["Vue.js", "JavaScript", "HTML", "CSS", "RESTful APIs"],
+    github: "https://github.com/rileyhitthefan/CITE-30363-FrogCrew",
+    inProgress: true,
+  },
+  {
     title: "Project 3",
     description: [
       "Description 1",

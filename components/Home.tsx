@@ -80,8 +80,7 @@ export default function Home() {
   
           <div className="overflow-hidden fade-mask">
             <div
-              className="flex flex-nowrap animate-scroll"
-              style={{ animationDuration: '30s' }}
+              className="flex flex-nowrap animate-scroll w-max"
             >
               {/* duplicated projects for infinite scroll */}
               {[...projects, ...projects].map((project, i) => (
@@ -94,7 +93,7 @@ export default function Home() {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-32 object-cover rounded pb-2"
+                    className="w-full h-32 object-cover object-left rounded pb-2"
                   />
                 </div>
               ))}
