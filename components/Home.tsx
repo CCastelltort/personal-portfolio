@@ -78,9 +78,10 @@ export default function Home() {
             </ul>
           </InfoCard>
   
-          <div className="overflow-hidden fade-mask">
+          {/* Projects slide show */}
+          <div className="overflow-hidden fade-mask group">
             <div
-              className="flex flex-nowrap animate-scroll w-max"
+              className="flex flex-nowrap animate-scroll w-max group-hover:[animation-play-state:paused]"
             >
               {/* duplicated projects for infinite scroll */}
               {[...projects, ...projects].map((project, i) => (

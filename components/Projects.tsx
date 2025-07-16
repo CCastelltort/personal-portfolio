@@ -19,7 +19,7 @@ const Projects = () => {
                   ))}
                 </div>
                 {project.inProgress && (
-                  <span className="bg-yellow-400 text-black italic px-2 rounded-lg self-start h-fit">
+                  <span className="bg-yellow-400 text-black italic px-2 rounded-lg self-start h-fit text-center">
                     In Progress
                   </span>
                 )}
