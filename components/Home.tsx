@@ -25,7 +25,7 @@ export default function Home() {
         </h1>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 pt-12 flex-1">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 pt-12">
 
         {/*COLUMN 1: Basic information about me */}
         <div className="relative flex flex-col justify-center items-center h-full">
@@ -57,7 +57,7 @@ export default function Home() {
           <img
             src="/profile.jpg"
             alt="Carlota"
-            className="w-40 h-40 sm:w-48 sm:h-48 md:w-60 md:h-60 rounded-full border-4 border-white object-cover mt-4"
+            className="w-40 h-40 sm:w-48 sm:h-48 lg:w-60 lg:h-60 rounded-full border-4 border-white object-cover mt-4"
           />
           <a
             href="/projects"
