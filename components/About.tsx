@@ -13,7 +13,7 @@ const About = () => {
   return (
     <Container>
       <PageTitle>About Me</PageTitle>
-      <div className="mt-12 grid gap-6 grid-cols-1 lg:grid-cols-3">
+      <div className="mt-12 px-10 grid gap-6 grid-cols-1 lg:grid-cols-3">
         <InfoCard title="EDUCATION">
           <div>
             <div>
