@@ -20,9 +20,7 @@ const Contact = () => {
                 <li className="flex items-center gap-2">
                   <MdEmail className="text-xl lg:text-2xl" />
                   <span className="text-md  lg:text-lg">
-                    <a href="mailto:carlota.castelltort@gmail.com" className="hover:underline">
                       carlota.castelltort@gmail.com
-                    </a>
                   </span>
                 </li>
                 <li className="flex items-center gap-2">

@@ -37,7 +37,7 @@ const About = () => {
         <InfoCard title="SKILLS">
             <section className="mb-4">
               <h3 className="font-semibold text-xl mb-2 underline">Languages</h3>
-              <ul className="grid grid-cols-3 gap-x-6 gap-y-1 list-disc pl-6">
+              <ul className="grid grid-cols-2 gap-x-6 gap-y-1 list-disc pl-6">
                 {skills.languages.map((lang, idx) => (
                 <li key={`lang-${idx}`}>{lang}</li>
               ))}
@@ -46,7 +46,7 @@ const About = () => {
 
             <section className="mb-4">
               <h3 className="font-semibold text-xl mb-2 underline">Frameworks / Libraries</h3>
-              <ul className="grid grid-cols-3 gap-x-6 gap-y-1 list-disc pl-6">
+              <ul className="grid grid-cols-2 gap-x-6 gap-y-1 list-disc pl-6">
                 {skills.frameworks.map((fw, idx) => (
                 <li key={`fw-${idx}`}>{fw}</li>
               ))}
@@ -55,7 +55,7 @@ const About = () => {
 
             <section>
               <h3 className="font-semibold text-xl mb-2 underline">Tools / Platforms</h3>
-              <ul className="grid grid-cols-3 gap-x-6 gap-y-1 list-disc pl-6">
+              <ul className="grid grid-cols-2 gap-x-6 gap-y-1 list-disc pl-6">
                 {skills.tools.map((tool, idx) => (
                 <li key={`tool-${idx}`}>{tool}</li>
               ))}
@@ -71,7 +71,7 @@ const About = () => {
           </ul>
         </InfoCard>
 
-        <div className="lg:col-span-3 text-justify text-white bg-white/30 p-6 rounded-2xl border border-white">
+        <div className="lg:col-span-3 text-justify text-white bg-white/30 px-6 pt-6 rounded-2xl border border-white">
           {bio.map((paragraph, idx) => (
             <p key={`bio-${idx}`} className="mb-6">
               {reactStringReplace(paragraph, /<Highlight>(.*?)<\/Highlight>/g, (match, i) => (
