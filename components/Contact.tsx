@@ -1,5 +1,3 @@
-'use client';
-
 import React from 'react';
 import Container from './ui/Container';
 import PageTitle from './ui/PageTitle';
@@ -22,7 +20,9 @@ const Contact = () => {
                 <li className="flex items-center gap-2">
                   <MdEmail className="text-xl lg:text-2xl" />
                   <span className="text-md  lg:text-lg">
-                    carlota.castelltort@gmail.com
+                    <a href="mailto:carlota.castelltort@gmail.com" className="hover:underline">
+                      carlota.castelltort@gmail.com
+                    </a>
                   </span>
                 </li>
                 <li className="flex items-center gap-2">
