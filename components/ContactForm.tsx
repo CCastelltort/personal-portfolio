@@ -7,28 +7,42 @@ const ContactForm = () => {
   const form = useRef<HTMLFormElement>(null);
   const [sent, setSent] = useState(false);
   const [error, setError] = useState(false);
+  const [loading, setLoading] = useState(false);
+
 
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (!form.current) return;
+  if (
+    !form.current ||
+    !process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID ||
+    !process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID ||
+    !process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+  ) {
+    console.error('Missing EmailJS configuration or form ref.');
+    setError(true);
+    return;
+  }
 
-    emailjs
-      .sendForm(
-        'service_64w1wgj',
-        'template_vypns74',
-        form.current,
-        'b3O25tS8CBBQnEjbg'
-      )
-      .then(() => {
-        setSent(true);
-        setError(false);
-        form.current?.reset();
-      })
-      .catch(() => {
-        setError(true);
-        setSent(false);
-      });
+  setLoading(true);
+
+  emailjs
+    .sendForm(
+      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+      form.current,
+      process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+    )
+    .then(() => {
+      setSent(true);
+      setError(false);
+      form.current?.reset();
+    })
+    .catch(() => {
+      setError(true);
+      setSent(false);
+    })
+    .finally(() => setLoading(false));
   };
 
   return (
@@ -65,9 +79,10 @@ const ContactForm = () => {
         />
         <button
           type="submit"
+          disabled={loading}
           className="bg-white text-black px-6 py-3 rounded hover:bg-gray-300 transition"
         >
-          Send Message
+          {loading ? 'Sending...' : 'Send Message'}
         </button>
       </form>
 
