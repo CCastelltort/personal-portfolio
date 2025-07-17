@@ -47,21 +47,21 @@ const ContactForm = () => {
           name="user_name"
           placeholder="Your Name"
           required
-          className="p-3 rounded bg-white/30 border border-white"
+          className="p-3 rounded bg-white/30 border border-white hover:bg-white/50"
         />
         <input
           type="email"
           name="user_email"
           placeholder="Your Email"
           required
-          className="p-3 rounded bg-white/30 border border-white"
+          className="p-3 rounded bg-white/30 border border-white hover:bg-white/50 "
         />
         <textarea
           name="message"
           placeholder="Your Message"
           required
           rows={5}
-          className="p-3 rounded bg-white/30 border border-white"
+          className="p-3 rounded bg-white/30 border border-white hover:bg-white/50"
         />
         <button
           type="submit"

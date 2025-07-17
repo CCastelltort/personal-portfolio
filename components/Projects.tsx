@@ -42,7 +42,7 @@ const Projects = () => {
 
               <div className='grid grid-cols-1 md:grid-cols-2'>
                 <div className="flex gap-4 justify-center">
-                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="bg-black px-2 py rounded-lg hover:bg-gray-800">Vist Repository</a>
+                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="bg-black px-2 py rounded-lg hover:bg-gray-700">Vist Repository</a>
                   {project.demo && (
                     <a href={project.demo} target="_blank" rel="noopener noreferrer" className="bg-green-700 px-2 py rounded-lg hover:bg-green-800">Demo</a>
                   )}
