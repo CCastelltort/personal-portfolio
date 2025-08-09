@@ -43,6 +43,18 @@ const projects: Project[] = [
     inProgress: true,
   },
   {
+    title: "AI-Integrated Jacket Design Prototype",
+    description: [
+      "Developed a prototype website for Revelia, an early-stage startup focused on AI-driven fashion customization.The prototype was created specifically for a startup competition, serving as a live demo to pitch Revelia’s business model and product vision",
+      "Built using Next.js with the App Router, TypeScript, and Tailwind CSS with a focus on clean, modular architecture where each page was broken into reusable components for clarity and scalability",
+      "The platform allows users to fully personalize their jackets, including colors, buttons, pockets, embroidery and more, or generate unique designs using an integrated AI model using natural language prompts"
+    ],
+    image: "/revelia.png",
+    tag: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    github: "",
+    demo: "",
+  },
+  {
     title: "Project 3",
     description: [
       "Description 1",
