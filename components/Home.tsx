@@ -87,15 +87,17 @@ export default function Home() {
               {[...projects, ...projects].map((project, i) => (
                 <div
                   key={i}
-                  className="inline-block w-56 flex-shrink-0 mt-4 mx-4 bg-white/30 rounded-lg p-4 border border-white"
+                  className="inline-flex w-56 flex-shrink-0 mt-4 mx-4 bg-white/30 rounded-lg p-4 border border-white flex-col"
                 >
                   <h4 className="font-semibold text-center mb-2 break-words">{project.title}</h4>
 
+                 <div className="flex-1 flex items-center">
                   <img
                     src={project.image}
                     alt={project.title}
                     className="w-full h-32 object-cover object-left rounded pb-2"
                   />
+                </div>
                 </div>
               ))}
             </div>
