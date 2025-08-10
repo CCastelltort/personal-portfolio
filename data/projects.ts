@@ -10,7 +10,7 @@ export type Project = {
 
 const projects: Project[] = [
   {
-    title: "TCU ROBO-CON 2025 – Best Design Award",
+    title: "TCU ROBO-CON 2025 - Best Design Award",
     description: [
       "Led a team of 5 in designing, assembling, and programming a custom Arduino Uno robot; developed a Bluetooth remote control system using the HM-10 module and Dabble app for real-time robot navigation",
       "Implemented a wall-following algorithm for autonomous maze navigation using an ultrasonic sensor mounted on a servo, enabling adaptive pathfinding and optimized motor control with PWM",
@@ -51,6 +51,17 @@ const projects: Project[] = [
     image: "/recipeManagement.png",
     tag: ["SQL", "MySQL", "Python"],
     github: "https://github.com/CCastelltort/recipe-management-system",
+  },
+  {
+    title: "Personal Portfolio",
+    description: [
+      "Developed a responsive personal portfolio website using Next.js, React, TypeScript, and Tailwind CSS to showcase my skills, projects, and provide an easy way for visitors to contact me",
+      "Implemented a modular code structure by extracting data into separate files and creating reusable components, improving maintainability and consistent layout",
+      "Integrated EmailJS API to enable a fully functional contact form, allowing visitors to send messages directly from the website "
+    ],
+    image: "/portfolio.png",
+    tag: ["Next.js", "React", "TypeScript", "Tailwind CSS", "EmailJS"],
+    github: "https://github.com/CCastelltort/personal-portfolio",
   },
   {
     title: "Project 3",
