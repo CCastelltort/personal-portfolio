@@ -11,7 +11,7 @@ export const bio: string[] = [
   the <Highlight>President’s List, Dean’s List</Highlight>, and selection to the <Highlight>NTJCAC All-Academic Team</Highlight>.`,
 
   `I later transferred to TCU, where I was awarded the <Highlight>prestigious Chancellor’s Scholarship</Highlight>, recognizing 
-  the top 1% of applicants for <Highlight>academic excellence, leadership, and potential to contribute meaningfully to the university community</Highlight>.`,
+  the <Highlight>top 1% of applicants</Highlight> for academic excellence, leadership, and potential to contribute meaningfully to the university community.`,
 
   `At TCU, I’ve been active in organizations such as <Highlight>SHPE</Highlight> (Society of Hispanic Professional Engineers), <Highlight>SWE</Highlight> 
   (Society of Women Engineers), <Highlight>Women in Computer Science</Highlight>, and the <Highlight>Robotics and AI Club</Highlight>. 
