@@ -43,14 +43,15 @@ const projects: Project[] = [
     inProgress: true,
   },
   {
-    title: "Recipe Management System",
+    title: "Hogwarts Artifacts - Backend",
     description: [
-      "Designed and populated a relational database using MySQL Workbench by creating an ER diagram, forward-engineering it into a normalized schema, and populating 9 tables with 500+ data entries",
-      "Built a Python-based Command-Line Interface (CLI) integrating 8 optimized SQL queries for efficient data retrieval and modification, with cascading updates and deletes to maintain relational integrity",
+      "Developed a Spring Boot backend featuring RESTful APIs with clear, well-structured endpoints to efficiently manage wizards and artifacts through full CRUD operations, incorporating user authentication and role-based access using Spring Security with JWT",
+      "Applied Test-Driven Development (TDD) following the Red, Green, Refactor cycle to build reliable, well-tested features. Utilized Spring MVC, Spring Data JPA, and IoC with dependency injection to create a clean, modular, and maintainable codebase",
+      "Containerized by building a Docker image, and implemented CI/CD pipelines using GitHub Actions. Deployed to Azure App Service with staging environments, securely connecting to a MySQL database via Azure Key Vault"
     ],
-    image: "/recipeManagement.png",
-    tag: ["SQL", "MySQL", "Python"],
-    github: "https://github.com/CCastelltort/recipe-management-system",
+    image: "/hogwartsBackend.png",
+    tag: ["Spring Boot", "CRUD", "TDD", "CI/CD", "Docker", "Azure", "Spring Security"],
+    github: "https://github.com/CCastelltort/hogwarts-artifacts-online"
   },
   {
     title: "Personal Portfolio",
@@ -72,6 +73,16 @@ const projects: Project[] = [
     image: "/hogwartsFrontend.png",
     tag: ["Vue 3", "HTML", "CSS", "JavaScript"],
     github: "https://github.com/CCastelltort/hogwarts-shopping-cart-vue-components",
+  },
+  {
+    title: "Recipe Management System",
+    description: [
+      "Designed and populated a relational database using MySQL Workbench by creating an ER diagram, forward-engineering it into a normalized schema, and populating 9 tables with 500+ data entries",
+      "Built a Python-based Command-Line Interface (CLI) integrating 8 optimized SQL queries for efficient data retrieval and modification, with cascading updates and deletes to maintain relational integrity",
+    ],
+    image: "/recipeManagement.png",
+    tag: ["SQL", "MySQL", "Python"],
+    github: "https://github.com/CCastelltort/recipe-management-system",
   },
   {
     title: "Project 3",
