@@ -54,6 +54,16 @@ const projects: Project[] = [
     github: "https://github.com/CCastelltort/hogwarts-artifacts-online"
   },
   {
+    title: "Hogwarts Shopping Cart - Frontend",
+    description: [
+      "Hogwarts-themed shopping cart built with Vue 3 and Vite, essentially serving as a checkout page that displays selected items with their quantities, stock status (in stock or backorder), and prices. Quantities can be adjusted or items removed, and an order summary is provided with toggleable details, including subtotal (sum of products), shipping estimate (based on quantity), tax estimate, total amount, and a checkout button",
+      "Component-based architecture showcasing Vue fundamentals, including v-model, v-if, computed properties, watchers, lifecycle hooks, props, slots, and more. Designed as a frontend learning project to demonstrate Vue's core features",
+    ],
+    image: "/hogwartsFrontend.png",
+    tag: ["Vue 3", "HTML", "CSS", "JavaScript"],
+    github: "https://github.com/CCastelltort/hogwarts-shopping-cart-vue-components",
+  },
+  {
     title: "Personal Portfolio",
     description: [
       "Developed a responsive personal portfolio website using Next.js, React, TypeScript, and Tailwind CSS to showcase my skills, projects, and provide an easy way for visitors to contact me",
@@ -63,16 +73,6 @@ const projects: Project[] = [
     image: "/portfolio.png",
     tag: ["Next.js", "React", "TypeScript", "Tailwind CSS", "EmailJS"],
     github: "https://github.com/CCastelltort/personal-portfolio",
-  },
-  {
-    title: "Hogwarts Shopping Cart - Frontend",
-    description: [
-      "Hogwarts-themed shopping cart built with Vue 3 and Vite, essentially serving as a checkout page that displays selected items with their quantities, stock status (in stock or backorder), and prices. Quantities can be adjusted or items removed, and an order summary is provided with toggleable details, including subtotal (sum of products), shipping estimate (based on quantity), tax estimate, total amount, and a checkout button",
-      "Component-based architecture showcasing Vue fundamentals, including v-model, v-if, computed properties, watchers, lifecycle hooks, props, slots, and more. Designed as a frontend learning project to demonstrate Vue's core features",
-    ],
-    image: "/hogwartsFrontend.png",
-    tag: ["Vue 3", "HTML", "CSS", "JavaScript"],
-    github: "https://github.com/CCastelltort/hogwarts-shopping-cart-vue-components",
   },
   {
     title: "Recipe Management System",
