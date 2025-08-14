@@ -64,6 +64,28 @@ const projects: Project[] = [
     github: "https://github.com/CCastelltort/hogwarts-shopping-cart-vue-components",
   },
   {
+    title: "Mock Job Posting Platform",
+    description: [
+      "Built a mock job posting platform using Laravel and SQLite, leveraging models, controllers, factories, seeders, and tests, with user registration/login, role-based job creation, and detailed job views for logged-in users",
+      "Implemented a search and filtering system, including a search bar to find specific jobs, and three job sections (Featured, Recently Posted, and Tags) with each section displaying jobs in a distinct order to enhance discoverability and user navigation",
+      "Developed a component-based frontend for maintainable UI design and used Herd for environment management, ensuring a smooth development workflow",
+    ],
+    image: "/jobPosting.png",
+    tag: ["Laravel", "PHP", "SQLite", "Herd"],
+    github: "https://github.com/CCastelltort/Job-Posting",
+  },
+  {
+    title: "Mock Microblogging Platform",
+    description: [
+      "Developed a mock Chirper microblogging platform using Laravel with Inertia and Vue 3, allowing users to post short messages ('Chirps') with authentication handled via Laravel Breeze",
+      "Implemented secure data handling by displaying only the Chirp text, author name, and relative dates (via Day.js) while hiding sensitive details, and enforcing authorization so only Chirp authors can edit or delete their posts",
+      "Added engagement features by sending email notifications for newly created Chirps using Laravel event listeners"
+    ],
+    image: "/chirper.png",
+    tag: ["Laravel", "PHP", "Inertia.js", "Vue.js", "JavaScript"],
+    github: "https://github.com/CCastelltort/chirper",
+  },
+  {
     title: "Personal Portfolio",
     description: [
       "Developed a responsive personal portfolio website using Next.js, React, TypeScript, and Tailwind CSS to showcase my skills, projects, and provide an easy way for visitors to contact me",
@@ -83,28 +105,6 @@ const projects: Project[] = [
     image: "/recipeManagement.png",
     tag: ["SQL", "MySQL", "Python"],
     github: "https://github.com/CCastelltort/recipe-management-system",
-  },
-  {
-    title: "Mock Job Posting Website",
-    description: [
-      "Built a mock job posting platform using Laravel and SQLite, leveraging models, controllers, factories, seeders, and tests, with user registration/login, role-based job creation, and detailed job views for logged-in users",
-      "Implemented a search and filtering system, including a search bar to find specific jobs, and three job sections (Featured, Recently Posted, and Tags) with each section displaying jobs in a distinct order to enhance discoverability and user navigation",
-      "Developed a component-based frontend for maintainable UI design and used Herd for environment management, ensuring a smooth development workflow",
-    ],
-    image: "/jobPosting.png",
-    tag: ["Laravel", "PHP", "SQLite", "Herd"],
-    github: "https://github.com/CCastelltort/Job-Posting",
-  },
-  {
-    title: "Chirper",
-    description: [
-      "Description 1",
-      "Description 2",
-      "Description 3"
-    ],
-    image: "/chirper.png",
-    tag: ["Laravel", "Tag2", "Tag3"],
-    github: "",
   },
 ];
 
