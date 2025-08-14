@@ -85,18 +85,27 @@ const projects: Project[] = [
     github: "https://github.com/CCastelltort/recipe-management-system",
   },
   {
-    title: "Project 3",
+    title: "Mock Job Posting Website",
+    description: [
+      "Built a mock job posting platform using Laravel and SQLite, leveraging models, controllers, factories, seeders, and tests, with user registration/login, role-based job creation, and detailed job views for logged-in users",
+      "Implemented a search and filtering system, including a search bar to find specific jobs, and three job sections (Featured, Recently Posted, and Tags) with each section displaying jobs in a distinct order to enhance discoverability and user navigation",
+      "Developed a component-based frontend for maintainable UI design and used Herd for environment management, ensuring a smooth development workflow",
+    ],
+    image: "/jobPosting.png",
+    tag: ["Laravel", "PHP", "SQLite", "Herd"],
+    github: "https://github.com/CCastelltort/Job-Posting",
+  },
+  {
+    title: "Chirper",
     description: [
       "Description 1",
       "Description 2",
       "Description 3"
     ],
-    image: "/images/project1.png",
-    tag: ["Tag1", "Tag2", "Tag3"],
+    image: "/chirper.png",
+    tag: ["Laravel", "Tag2", "Tag3"],
     github: "",
-    demo: "https://github.com",
-    inProgress: true,
-  }
+  },
 ];
 
 export default projects;
