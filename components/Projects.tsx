@@ -35,7 +35,7 @@ const Projects = () => {
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-full object-cover object-left"
+                      className="w-full h-full object-cover object-left max-h-75 lg:max-h-none"
                     />
                   </div>
               </div>
