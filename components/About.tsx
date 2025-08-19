@@ -71,7 +71,7 @@ const About = () => {
           </ul>
         </InfoCard>
 
-        <div className="lg:col-span-3 text-justify text-white bg-white/30 px-6 pt-6 rounded-2xl border border-white">
+        <div className="lg:col-span-3 text-white bg-white/30 px-6 pt-6 rounded-2xl border border-white">
           {bio.map((paragraph, idx) => (
             <p key={`bio-${idx}`} className="mb-6">
               {reactStringReplace(paragraph, /<Highlight>(.*?)<\/Highlight>/g, (match, i) => (
