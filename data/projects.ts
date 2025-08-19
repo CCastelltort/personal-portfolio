@@ -56,8 +56,8 @@ const projects: Project[] = [
   {
     title: "Hogwarts Shopping Cart - Frontend",
     description: [
-      "Hogwarts-themed shopping cart built with Vue 3 and Vite, essentially serving as a checkout page that displays selected items with their quantities, stock status (in stock or backorder), and prices. Quantities can be adjusted or items removed, and an order summary is provided with toggleable details, including subtotal (sum of products), shipping estimate (based on quantity), tax estimate, total amount, and a checkout button",
-      "Component-based architecture showcasing Vue fundamentals, including v-model, v-if, computed properties, watchers, lifecycle hooks, props, slots, and more. Designed as a frontend learning project to demonstrate Vue's core features",
+      "Built a Hogwarts-themed shopping cart with Vue 3 and Vite, essentially serving as a checkout page that displays selected items with their quantities, stock status (in stock or backorder), and prices. Quantities can be adjusted or items removed, and an order summary is provided with toggleable details, including subtotal (sum of products), shipping estimate (based on quantity), tax estimate, total amount, and a checkout button",
+      "Implemented a component-based architecture showcasing Vue fundamentals, including v-model, v-if, computed properties, watchers, lifecycle hooks, props, slots, and more. Designed as a frontend learning project to demonstrate Vue's core features",
     ],
     image: "/hogwartsFrontend.png",
     tag: ["Vue 3", "HTML", "CSS", "JavaScript"],
