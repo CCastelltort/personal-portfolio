@@ -20,7 +20,7 @@ export default function Home() {
         <h2 className="text-lg sm:text-xl font-bold font-sans text-white pb-2">
           Hi! My name is
         </h2>
-        <h1 className="text-3xl sm:text-3xl md:text-5xl font-bold font-sans text-white">
+        <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold font-sans text-white">
           Carlota Castelltort Pinto
         </h1>
       </div>
