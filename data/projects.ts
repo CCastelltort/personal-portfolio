@@ -50,7 +50,7 @@ const projects: Project[] = [
       "Containerized by building a Docker image, and implemented CI/CD pipelines using GitHub Actions. Deployed to Azure App Service with staging environments, securely connecting to a MySQL database via Azure Key Vault"
     ],
     image: "/hogwartsBackend.png",
-    tag: ["Spring Boot", "CRUD", "TDD", "CI/CD", "Docker", "Azure", "Spring Security"],
+    tag: ["Spring Boot", "CRUD", "Docker", "Azure", "TDD", "CI/CD", "Spring Security"],
     github: "https://github.com/CCastelltort/hogwarts-artifacts-online"
   },
   {
