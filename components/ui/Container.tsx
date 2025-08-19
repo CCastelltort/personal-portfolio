@@ -6,7 +6,7 @@ interface ContainerProps {
 
 const Container = ({ children }: ContainerProps) => {
   return (
-    <div className="min-h-screen px-10 py-24 flex flex-col bg-gradient-to-r from-blue-800 to-purple-800">
+    <div className="min-h-screen px-2 sm:px-10 py-24 flex flex-col bg-gradient-to-r from-blue-800 to-purple-800">
       {children}
     </div>
   )
