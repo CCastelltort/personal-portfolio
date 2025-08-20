@@ -5,7 +5,7 @@ export const bio: string[] = [
   about <Highlight>software engineering, AI,</Highlight> and <Highlight>web development</Highlight>, and as I prepare to graduate 
   in <Highlight>Spring 2026</Highlight>, I’m excited to keep growing as a developer and contribute to innovative and impactful projects.`,
   
-  `Originally from Spain, I began my college journey at Cisco College, where I was a player of the women’s 
+  `Originally from Barcelona, I began my college journey at Cisco College, where I was a player of the women’s 
   basketball team. That experience instilled in me strong values of <Highlight>commitment, teamwork, leadership, communication</Highlight>, 
   and <Highlight>time management</Highlight>. While at Cisco, I earned consistent academic honors, including 
   the <Highlight>President’s List, Dean’s List</Highlight>, and selection to the <Highlight>NTJCAC All-Academic Team</Highlight>.`,
