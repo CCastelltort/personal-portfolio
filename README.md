@@ -1,5 +1,7 @@
 # 💼 Personal Portfolio
 
+🔗 **[Live Demo](https://carlota-castelltort-pinto-portfolio.vercel.app/)**  
+
 This is a responsive personal portfolio website built using Next.js. The goal of this project is to showcase my skills, projects, and provide an easy way for visitors to contact me directly through the website.
 
 ## 🛠 Technologies Used
@@ -9,6 +11,7 @@ This is a responsive personal portfolio website built using Next.js. The goal of
 - **TypeScript**
 - **Tailwind CSS**
 - **EmailJS API**
+- **Vercel**
 
 ## ✨ Features
 **Responsive design**: 
@@ -19,4 +22,10 @@ This is a responsive personal portfolio website built using Next.js. The goal of
   - Use of reusable components to help maintain consistent layout and reduce code duplication
 
 **Contact Form with EmailJS**:
-  - Integrated contact form allowing visitors to send messages easily directly from the website 
+  - Integrated contact form allowing visitors to send messages easily directly from the website
+
+## 🚀 Deployment  
+This project is deployed on **Vercel**, with automatic CI/CD configured:  
+- Pushes to `main` trigger production deployments  
+- Pull requests generate preview deployments for testing  
+- Environment variables (e.g., EmailJS keys) are securely managed via Vercel’s dashboard
