@@ -90,10 +90,11 @@ const projects: Project[] = [
     description: [
       "Developed a responsive personal portfolio website using Next.js, React, TypeScript, and Tailwind CSS to showcase my skills, projects, and provide an easy way for visitors to contact me",
       "Implemented a modular code structure by extracting data into separate files and creating reusable components, improving maintainability and consistent layout",
-      "Integrated EmailJS API to enable a fully functional contact form, allowing visitors to send messages directly from the website "
+      "Integrated EmailJS API to enable a fully functional contact form, allowing visitors to send messages directly from the website",
+      "Deployed on Vercel with automatic CI/CD, while securely managing environment variables (e.g., EmailJS keys) via Vercel’s dashboard"
     ],
     image: "/portfolio.png",
-    tag: ["Next.js", "React", "TypeScript", "Tailwind CSS", "EmailJS"],
+    tag: ["Next.js", "React", "TypeScript", "Tailwind CSS", "EmailJS", "Vercel"],
     github: "https://github.com/CCastelltort/personal-portfolio",
   },
   {
